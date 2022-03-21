@@ -40,7 +40,7 @@ public class PersonaController {
 	 }
 	 
 	 @GetMapping(value="/delete/{id}")
-	 /*clase de eliminacion nueva*/
+	 /*clase de eliminacion nueva y desde 0*/
 	 public ResponseEntity<Persona>delete(@RequestBody Long id){
 		 Persona persona = personaServiceApi.get(id);
 		 if(persona != null) {
